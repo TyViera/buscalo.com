@@ -1,0 +1,64 @@
+<script src="js/buscador-vuelos.js"></script>
+<form class="form-horizontal form-buscar-vuelo" action="buscar-vuelos.php" method="POST">
+    <h4>Buscar ofertas de vuelos</h4>
+    <div>
+        <label class="radio-inline">
+            <input type="radio" name="tipo" value="idavuelta" checked>
+            Ida y vuelta
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="tipo" value="ida">
+            Solo ida
+        </label>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="form-group">
+                <label class="col-md-2 control-label">Origen</label>
+                <div class="col-md-10">
+                    <input type="text" name="origen" class="form-control origen-vuelo" placeholder="Ingresa desde donde viajas" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="form-group">
+                <label class="col-md-2 control-label">Destino</label>
+                <div class="col-md-10">
+                    <input type="text" name="destino" class="form-control destino-vuelo" placeholder="Ingresa hacia donde viajas"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="form-group">
+                <label class="col-md-2 control-label">Fecha Partida</label>
+                <div class="col-md-10">
+                    <div class='input-group date-partida'>
+                        <input type='text' name="fecha_partida" class="form-control" placeholder="DD/MM/YYYY" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="form-group">
+                <label class="col-md-2 control-label">Fecha Retorno</label>
+                <div class="col-md-10">
+                    <div class='input-group date-retorno'>
+                        <input type='text' name="fecha_retorno" class="form-control" placeholder="DD/MM/YYYY" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i> Buscar vuelos</button>
+        </center>
+    </div>
+</form>

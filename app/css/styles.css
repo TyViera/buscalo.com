@@ -1,0 +1,93 @@
+html{
+    overflow-x: hidden;
+}
+
+#imagenFondo{
+    position: fixed;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+#logoEmpresa{
+    position: relative;
+    left: 20%;
+    top: 10px;
+    border-radius : 5px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.contenido{
+    min-height : 700px;
+    margin-bottom : -20px;
+}
+
+.contenido-completo{
+    background-color : white;
+}
+
+.contenido-transparente{
+    background-color : rgba(0,0,0,0.5);
+    position: absolute;
+    width: 96%;
+    height: 90%;
+    border-radius : 5px;
+    margin: 2%;
+}
+
+.contenido-transparente-relative{
+    background-color : rgba(0,0,0,0.5);
+    position: relative;
+    width: 96%;
+    height: 90%;
+    border-radius : 5px;
+    margin: 2%;
+}
+
+.titulo{
+    position: relative;
+    font-size: 30px;
+    color: white;
+    left: 5px;
+}
+
+.form-buscar-vuelo{
+    background-color : rgba(255,255,255,0.9);
+    border-radius : 5px;
+    padding: 20px;
+}
+
+.item-img{
+    overflow: hidden;
+    border: 5px solid black;
+}
+
+.m-h-15{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.p-h-0{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.columna-imagen{
+    position: relative;
+}
+
+.fila-imagen-top{
+    position: absolute;
+}
+
+@media(max-width: 500px){
+    .item-img{
+        max-height: 200px;
+        min-height: 200px;
+        width: 100%;
+    }
+}

@@ -1,3 +1,4 @@
+-- create database avianca;
 --
 -- Base de datos: `avianca`
 --
@@ -16,7 +17,8 @@ CREATE TABLE `vuelo` (
   `fechaIda` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
   `fechaVuelta` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
   `tipoVuelo` varchar(40) COLLATE utf8_spanish_ci NOT NULL,
-  `horaVuelo` varchar(20) COLLATE utf8_spanish_ci NOT NULL
+  `horaVuelo` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `precio` varchar(20) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vuelos>
+  <vuelo>
+    <aerolinea>AVIANCA</aerolinea>
+    <aeropuerto>LIMA</aeropuerto>
+    <lugar_origen>LIMA</lugar_origen>
+    <lugar_destino>SANTIAGO</lugar_destino>
+    <fecha>21-02-2017</fecha>
+    <hora>10:00 HRS</hora>
+    <precio>150.00</precio>
+  </vuelo>
+  <vuelo>
+    <aerolinea>LAN</aerolinea>
+    <aeropuerto>AOSD</aeropuerto>
+    <lugar_origen>LIMA</lugar_origen>
+    <lugar_destino>SANTIAGO</lugar_destino>
+    <fecha>2017-02-20</fecha>
+    <hora>15:02 HRS</hora>
+    <precio>90.00</precio>
+  </vuelo>
+</vuelos>
