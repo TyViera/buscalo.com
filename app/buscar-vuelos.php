@@ -98,7 +98,7 @@ if($bdAvianca != null){
 
 if($bdLan != null ){
     $querySQL = "SELECT airport AS aeropuerto, flight_source AS lugar_origen, flight_destination AS lugar_destino,";
-    $querySQL = $querySQL." CAST(flight_date AS DATE) AS fecha, to_char(CAST(flight_date AS TIME),'HH24:MI HRS') AS hora, price AS precio FROM flights ";
+    $querySQL = $querySQL." to_char(CAST(flight_date AS DATE), 'DD/MM/YYYY') AS fecha, to_char(CAST(flight_date AS TIME),'HH24:MI HRS') AS hora, price AS precio FROM flights ";
     $querySQL = $querySQL." WHERE flight_source LIKE $1 AND flight_destination LIKE $2";
     if(!is_null($fechaPartida) && $fechaPartida != "" && !is_null($fechaRetorno) && $fechaRetorno != ""){
         $querySQL = $querySQL." AND (CAST(flight_date AS DATE)=$3 OR CAST(flight_date AS DATE)=$4) ";
